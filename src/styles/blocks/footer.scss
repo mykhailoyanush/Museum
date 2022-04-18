@@ -1,0 +1,177 @@
+.footer {
+  padding: 40px 0 30px;
+  background-color: $greyBgColor;
+
+  min-width: 320px;
+
+  &__content {
+    display: grid;
+    row-gap: 50px;
+    margin-bottom: 60px;
+
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__contacts {
+    &--title {
+      font-family: "Playfair Display", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      color: #f1f5f4;
+
+      margin-bottom: 10px;
+
+      @include onTablet {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+    }
+
+    &--address {
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      line-height: 150%;
+      color: #f1f5f4;
+      text-decoration: none;
+
+      margin-bottom: 30px;
+
+      @include onTablet {
+        margin-bottom: 50px;
+      }
+
+      &-link {
+        color: inherit;
+
+        &:hover {
+          color: aqua;
+        }
+      }
+    }
+
+    &--icons {
+      display: flex;
+      justify-content: space-around;
+      column-gap: 25px;
+
+      &-link {
+        transition-duration: 0.3s;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  @include onTablet {
+    padding: 50px 0 30px;
+  }
+
+  &__shedule {
+    &--title {
+      font-family: "Playfair Display", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      color: #f1f5f4;
+
+      margin-bottom: 10px;
+
+      @include onTablet {
+        font-size: 20px;
+
+        margin-bottom: 30px;
+      }
+    }
+
+    &--content {
+      &-elem {
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        color: #f1f5f4;
+
+        @include onTablet {
+          font-size: 20px;
+        }
+      }
+
+      margin-bottom: 30px;
+    }
+  }
+
+  &__nav {
+    &--title {
+      margin-bottom: 10px;
+
+      @include onTablet {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--main {
+      font-family: "Playfair Display", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      color: #f1f5f4;
+    }
+
+    &--elem {
+      margin-bottom: 5px;
+
+      @include onTablet {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--link {
+      font-family: "Raleway", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #f1f5f4;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--date {
+      font-family: "Raleway", sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      color: #f1f5f4;
+
+      margin-right: 22px;
+    }
+
+    &--terms {
+      font-family: "Raleway", sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      color: #f1f5f4;
+    }
+  }
+}
